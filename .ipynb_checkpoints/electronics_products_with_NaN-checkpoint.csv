@@ -1,0 +1,27 @@
+Product ID,Product Name,Category,Price (INR),Stock,Brand,Warranty (Years),Rating
+101,Smartphone X1,Mobile,1000,120,Philips,,3.8
+102,Bluetooth Speaker Z,Audio,1500,130,Lenovo,1.0,3.8
+103,LED TV 43 inch,Television,2000,140,JBL,3.0,4.2
+104,Laptop Core i5,Computers,2500,150,Lenovo,1.0,3.5
+105,Wireless Earbuds Pro,Audio,3000,10,JBL,,4.5
+106,Smartwatch Fit 2,Wearables,3500,20,Lenovo,2.0,3.8
+107,Gaming Mouse G7,Computer Accessories,4000,30,JBL,1.0,4.5
+108,Mechanical Keyboard K3,Computer Accessories,4500,40,Dell,2.0,3.5
+109,Tablet A10,Tablet,5000,50,JBL,2.0,
+110,Power Bank 20000mAh,Accessories,5500,60,JBL,3.0,4.5
+111,DSLR Camera 24MP,Camera,6000,70,Dell,1.0,4.2
+112,Portable Projector Mini,Projector,6500,80,Lenovo,2.0,3.5
+113,Air Purifier Max,Home Electronics,7000,90,LG,2.0,4.5
+114,Electric Kettle Steel,Kitchen,7500,100,Boat,,4.0
+115,Microwave Oven 20L,Kitchen,8000,110,Philips,3.0,3.8
+116,Induction Cooktop I5,Kitchen,8500,120,Samsung,2.0,
+117,Bluetooth Headphones H9,Audio,9000,130,Sony,2.0,4.8
+118,4K Smart TV 55 inch,Television,9500,140,Samsung,3.0,4.2
+119,Router Dual Band,Networking,10000,150,Sony,3.0,
+120,Printer Inkjet P210,Printer,500,10,HP,3.0,4.5
+121,USB Flash Drive 64GB,Storage,1000,20,JBL,3.0,
+122,External Hard Disk 1TB,Storage,1500,30,Sony,1.0,4.5
+123,Ceiling Fan Xpress,Home Electronics,2000,40,Boat,2.0,3.5
+124,Smart Bulb RGB,Home Electronics,2500,50,LG,,
+125,Washing Machine 7kg,Home Appliances,3000,60,JBL,3.0,3.8
+126,Refrigerator 190L,Home Appliances,3500,70,Sony,1.0,

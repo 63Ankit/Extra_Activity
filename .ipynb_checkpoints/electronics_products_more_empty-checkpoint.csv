@@ -1,0 +1,27 @@
+Product ID,Product Name,Category,Price (INR),Stock,Brand,Warranty (Years),Rating,Color,Seller,Discount (%),Description
+101,Smartphone X1,Mobile,1000,120,Philips,2.0,4.2,Blue,ElectroWorld,5.0,Latest model
+102,Bluetooth Speaker Z,Audio,1500,130,Samsung,3.0,4.2,Black,ElectroWorld,,Latest model
+103,LED TV 43 inch,Television,2000,140,Dell,3.0,,Black,RetailMart,10.0,
+104,Laptop Core i5,Computers,2500,150,Samsung,,4.8,Blue,ElectroWorld,15.0,
+105,Wireless Earbuds Pro,Audio,3000,10,Philips,2.0,3.8,Black,,15.0,
+106,Smartwatch Fit 2,Wearables,3500,20,HP,1.0,4.0,White,ShopPlus,5.0,
+107,Gaming Mouse G7,Computer Accessories,4000,30,JBL,3.0,4.2,Blue,RetailMart,5.0,Latest model
+108,Mechanical Keyboard K3,Computer Accessories,4500,40,Philips,1.0,4.0,Blue,RetailMart,,Latest model
+109,Tablet A10,Tablet,5000,50,Mi,3.0,4.0,Black,ElectroWorld,5.0,
+110,Power Bank 20000mAh,Accessories,5500,60,Samsung,3.0,4.2,,ShopPlus,,
+111,DSLR Camera 24MP,Camera,6000,70,Samsung,2.0,4.8,White,,15.0,Latest model
+112,Portable Projector Mini,Projector,6500,80,Lenovo,1.0,,Blue,ShopPlus,15.0,Latest model
+113,Air Purifier Max,Home Electronics,7000,90,HP,1.0,4.2,Black,RetailMart,,High quality product
+114,Electric Kettle Steel,Kitchen,7500,100,Lenovo,,4.2,Black,ElectroWorld,,Latest model
+115,Microwave Oven 20L,Kitchen,8000,110,HP,,4.5,Blue,ElectroWorld,15.0,High quality product
+116,Induction Cooktop I5,Kitchen,8500,120,HP,,4.5,White,RetailMart,10.0,
+117,Bluetooth Headphones H9,Audio,9000,130,Philips,3.0,3.8,White,ElectroWorld,15.0,
+118,4K Smart TV 55 inch,Television,9500,140,Lenovo,3.0,3.8,,,,
+119,Router Dual Band,Networking,10000,150,Samsung,,4.0,White,ElectroWorld,10.0,High quality product
+120,Printer Inkjet P210,Printer,500,10,Lenovo,2.0,4.5,Blue,RetailMart,10.0,High quality product
+121,USB Flash Drive 64GB,Storage,1000,20,Mi,3.0,4.2,Blue,,,High quality product
+122,External Hard Disk 1TB,Storage,1500,30,Philips,3.0,3.5,Blue,ElectroWorld,15.0,Latest model
+123,Ceiling Fan Xpress,Home Electronics,2000,40,Dell,2.0,,,RetailMart,10.0,High quality product
+124,Smart Bulb RGB,Home Electronics,2500,50,JBL,3.0,4.5,White,ShopPlus,5.0,Latest model
+125,Washing Machine 7kg,Home Appliances,3000,60,Philips,,4.8,,ElectroWorld,,High quality product
+126,Refrigerator 190L,Home Appliances,3500,70,Lenovo,,4.0,White,ShopPlus,15.0,

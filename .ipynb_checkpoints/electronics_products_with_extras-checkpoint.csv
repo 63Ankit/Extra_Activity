@@ -1,0 +1,27 @@
+Product ID,Product Name,Category,Price (INR),Stock,Brand,Warranty (Years),Rating
+101,Smartphone X1,Mobile,1000,120,Boat,,4.5
+102,Bluetooth Speaker Z,Audio,1500,130,JBL,3,4.8
+103,LED TV 43 inch,Television,2000,140,HP,3,3.5
+104,Laptop Core i5,Computers,2500,150,Philips,,
+105,Wireless Earbuds Pro,Audio,3000,10,Dell,2,3.8
+106,Smartwatch Fit 2,Wearables,3500,20,Philips,,3.5
+107,Gaming Mouse G7,Computer Accessories,4000,30,LG,,4.8
+108,Mechanical Keyboard K3,Computer Accessories,4500,40,Lenovo,3,4.5
+109,Tablet A10,Tablet,5000,50,Samsung,2,3.8
+110,Power Bank 20000mAh,Accessories,5500,60,Samsung,,
+111,DSLR Camera 24MP,Camera,6000,70,LG,1,4.2
+112,Portable Projector Mini,Projector,6500,80,Boat,2,4.5
+113,Air Purifier Max,Home Electronics,7000,90,Samsung,3,4.0
+114,Electric Kettle Steel,Kitchen,7500,100,Dell,,4.5
+115,Microwave Oven 20L,Kitchen,8000,110,Lenovo,2,3.8
+116,Induction Cooktop I5,Kitchen,8500,120,LG,2,4.8
+117,Bluetooth Headphones H9,Audio,9000,130,Mi,3,4.8
+118,4K Smart TV 55 inch,Television,9500,140,Lenovo,1,
+119,Router Dual Band,Networking,10000,150,LG,3,3.8
+120,Printer Inkjet P210,Printer,500,10,JBL,,3.8
+121,USB Flash Drive 64GB,Storage,1000,20,HP,3,4.2
+122,External Hard Disk 1TB,Storage,1500,30,Dell,1,4.0
+123,Ceiling Fan Xpress,Home Electronics,2000,40,HP,,
+124,Smart Bulb RGB,Home Electronics,2500,50,Lenovo,,3.8
+125,Washing Machine 7kg,Home Appliances,3000,60,,3,4.0
+126,Refrigerator 190L,Home Appliances,3500,70,Dell,2,3.8
