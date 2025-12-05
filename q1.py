@@ -244,7 +244,6 @@ while i<=10:
 print(Product)
 
 
-
 # reverse a number whithout using slicing
 a=345
 sum=0
@@ -348,7 +347,7 @@ while i<len(a):
     i+=1
     i1+=+i1
 print(s)
-'''
+
 
 a='Hello'
 b='bye'
@@ -362,4 +361,79 @@ while i<len(a) or i<len(b):
         out+=b[i]
     i+=1
 print(out)
+
+
+a='ababccad'
+d={}
+i=0
+while i<len(a):
+    d[a[i]]=a.count(a[i])
+
+    i+=1
+print(d)
+#=============================================================
+a='aaabcbbc'
+i=0
+out=''
+c=1
+while i<len(a)-1:
+    if a[i]==a[i+1]:
+        c+=1
+    else:
+        out+=a[i]+str(c)
+        c=1
+    i+=1
+out+=a[-1]+str(c)
+print(out)
+#====================================================
+
+a=['Hai',10,'Hai',3+5j,35,10,[1,2,3]]
+out=[]
+i=0
+while i<len(a):
+    if a[i] not in out:
+        if a.count(a[i])>1:
+         out+=[a[i]]
+    i+=1
+    
+print(out)
+  
+
+a=[777,'hello',121,12,3+5j,99,123]
+output=[777,121,99]
+i=0
+out=[]
+while i<len(a):
+    if type(a[i]==int) and str(a[i])==str(a[i])[::-1]:
+        out+=[a[i]]
+    i+=1
+print(out)
+
+
+#==================================
+a=['Hello',10,'Python','star',[1,2,3],'ab']
+i=0
+out={}
+while i<len(a):
+    if type(a[i])==str:
+        if i%2==0:
+            out[a[i]]=a[i][::-1]+str(len(a[i])*2)
+        else:
+            out[a[i]]=len(a[i])*2
+    i+=1
+
+print(out)
+
+'''
+#================================================================
+a='((()))('
+i=0
+count=0
+while i<len(a):
+    if a[i]=='(':
+        count+=1
+    elif a[i]==')':
+        count-=1
+        
+print(count)
 
