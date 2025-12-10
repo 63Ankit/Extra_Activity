@@ -27,6 +27,36 @@ Piller of the OOPS:
 3 Polymorphism 
 4 Abstraction
 
+# find even and odd without using the modulus operator 
+num = int(input("Enter a number: "))
+
+last_digit = num - (num // 10) * 10  # Extract last digit
+
+if last_digit in [0, 2, 4, 6, 8]:
+    print("Even")
+else:
+    print("Odd")
+
+# Using the Bitwise Operator
+num = int(input("Enter a number: "))
+
+if (num & 1) == 0:
+    print("Even")
+else:
+    print("Odd")
+ # Using a simple method
+ num = int(input("Enter a number: "))
+n = num
+
+while n > 1:
+    n = n - 2
+
+if n == 0:
+    print("Even")
+else:
+    print("Odd")
+
+
 
 
 n1=int(input("Enter a number: "))
@@ -424,8 +454,9 @@ while i<len(a):
 
 print(out)
 
-'''
+
 #================================================================
+
 a='((()))('
 i=0
 count=0
@@ -437,3 +468,152 @@ while i<len(a):
         
 print(count)
 
+
+#====================================================
+a='((()))('
+i=0
+count=0
+count1=0
+while i<len(a):
+    if a[i]=='(':
+        count+=1
+    elif a[i]==')':
+        count1+=1
+        
+print(abs(count-count1))
+
+
+
+#===================================================
+n1=int(input("Enter a number here: "))
+count=0
+i=1
+while i<n1:
+    if n1%i==0:
+        count+=i
+    
+    i+=1
+print(count)
+if count==n1:
+    print("perfect number ")
+else:
+    print("not a perfect")
+
+#===================================================
+
+
+# Print natural number
+for i in range(1,11):
+    print(i,end=' ')
+
+# WAP to print all the even numbers between 1 to 15
+for i in range(1,16):
+    if i%2==0:
+        print(i)
+
+# WAP to print the length of the collection without len()
+count=0
+for i in "Ankit":
+    count+=1
+print(count)
+
+
+
+
+d=[10,20,30,40]
+count=0
+for i in d:
+    count+=1
+print(count)
+
+
+d={'name':'Ankit','age':12}
+for i in d:
+    print(d[i])
+print(d.keys())
+print(d.values())
+print(d.items())
+
+
+d={'name':'Ankit','age':12}
+for i in d.values():
+    print(i)
+
+
+# WAP to extract all the upper case alphabet from the given string.
+a='AnKitA'
+for i in a:
+    if 'A'<=i<='Z':
+        print(i)
+
+
+
+#============================================================
+a='AnKitA'
+for i in range(len(a)):
+    if 'A'<=a[i]<='Z' and i%2==0:
+        print(a[i])
+
+
+#============================================================
+# WAP to extract all the integers from a list using isInstanse
+l1=[10,20,30,40,50,'Ankit',87]
+l2=[]
+for i in l1:
+    if isinstance(i,int):
+        l2.append(i)
+print(l2)
+
+
+
+# WAP to check number of upper case with number of lower case present insside a string if number of upper cases a  more then number of lowercase then concat uppercase alphabet with lower case alphabet if not print the p[rodunct ] length of uppercase with lower case alphabet
+
+A='AnkitAag'
+upper=''
+lower=''
+for i in A:
+    if "A"<=i<"Z":
+        upper+=i
+    elif 'a'<=i<'z':
+        lower+=i
+if len(upper)>len(lower):
+    print(upper+lower)
+else:
+    print(len(upper)*lower)
+
+
+
+
+# WAP to print factorial of a number
+n=5
+fact=1
+for i in range(1,n+1):
+    fact*=i
+print(fact)
+
+
+
+# WAP 
+str1='nitin how is ava'
+l1=[]
+for i in str.split(' '):
+    if str(i)==str(i)[::-1]:
+        l1.append(i)
+print(l1)
+
+
+# WAP 
+a=['hai',3,3.3,[1,3,3],'hello']
+for i in a:
+    if type(i)==int or type(i)==complex or type(i)==float:
+        print(i)
+    
+'''
+a=['hai',3,3.3,[1,2,3],'Hello']
+a1=[]
+for i in a:
+    if type(i)==int or type(i)==complex or type(i)==float:
+        a1.append(1)
+    else:
+        a1.append(len(i))
+print(a1)
