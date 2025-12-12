@@ -608,7 +608,7 @@ for i in a:
     if type(i)==int or type(i)==complex or type(i)==float:
         print(i)
     
-'''
+        
 a=['hai',3,3.3,[1,2,3],'Hello']
 a1=[]
 for i in a:
@@ -617,3 +617,209 @@ for i in a:
     else:
         a1.append(len(i))
 print(a1)
+
+
+#==================================================================
+a=['Home.html','google.com','gmail.com','yahoo.in','pro.py']
+out=['html','com','co
+m','in','py']
+for i in a.split('.'):
+    print(i)
+
+
+a=['Home.html','google.com','gmail.com','yahoo.in','pro.py']
+output={'html':['home'],'com':["google,gmail"],'in':['yahoo'],'py':['pro']}
+out={}
+for i in a:
+    a1=i.split('.')
+    if a1[i] not in out:
+        out[a1[1]]=[a1[0]]
+    else:
+        out[a1[1]]+=[a1[0]]
+print(out)
+
+#==============================================
+
+for i in range(1,11):
+    if i==7 or i==5:
+        break
+    print(i,end=' ')
+
+for i in range(1,11):
+    print(i,end=' ')
+    break
+    
+
+#==============================
+
+user='admin@gmail.com'
+while True:
+    user_name=input("enter the user: ")
+    if user==user_name:
+        print("Welcome to the website")
+        break
+    else:
+         print("Enter the proper details")
+
+
+n1=6
+while True:
+    number=int(input("Enter a number here: "))
+    if n1>number:
+        print("Almost near but not perfect...")
+    elif n1<number:
+        print("You go away for this....")
+    elif n1==number:
+        print("Thus Corror...")
+        break
+
+
+
+# number is prime or not
+n=int(input("Enter a number here: "))
+i=2
+while i<n:
+    if n%i==0:
+        print("Number is not a prime number...")
+        break
+    i+=1
+else:
+    print("Number is a prime number...")
+
+# Take a collection and check its a homogeneous or hetrogeneous data..
+
+
+a=['Home.html','google.com','gmail.com','yahoo.in','pro.py']
+output={'html':['home'],'com':["google,gmail"],'in':['yahoo'],'py':['pro']}
+out={}
+for i in a:
+    a1=i.split('.')
+    if a1[1] not in out:
+        out[a1[1]]=[a1[0]]
+    else:
+        out[a1[1]]+=[a1[0]]
+print(out)
+
+#==============================================================================
+
+# Take a collection and check its a homogeneous or hetrogeneous data...
+
+l=[23,34,54,"Ankit",2+3j,2.2]
+i=0
+while i<len(l)-1:
+    if type(l[i])==type(l[i+1]):
+        i+=1
+        continue
+    else:
+        print("The Collection Contain here hetrogeneous data... ")
+        break
+else:
+    print("The Collection contain here homogeneous data.....")
+
+
+#=============================================================
+
+l=[23,34,54,"Ankit",2+3j,2.2]
+for i in range(len(l)-1):
+    if type(l[i])!=type(l[i+1]):
+        print("hetro")
+        break
+else:
+    print("homo")
+
+    
+
+# WAP to print all the even numbers between 1 to 100 
+for i in range(0,111,2):
+    print(i,end=' ')
+for i in range(0,101):
+    if i%2==0:
+        print(i)
+    else:
+        continue
+
+# Extract uppercase using continue keyword.
+a='AnkitwwWWW'
+for i in a:
+    if 'A'<=i<='Z':
+        print(i)
+    else:
+        continue
+
+        
+a=[123,121,232,3431,4313,4231,34133,134223]
+for i in a:
+    if str(i)!=str(i)[::-1]:
+        continue
+    else:
+        print(i)
+   
+# Nested for loop: for loop inside the for loop
+
+a='how are you all'
+output=[1,2,2,1]
+l1=[]
+for i in a.split(' '):
+    count=0
+    for j in i:
+        if j in 'AEIOUaeiou':
+            count+=1
+    l1.append(count)
+print(l1)
+
+
+
+# Print the factorial of a number from 1 to 10
+out=[]
+for i in range(1,11):
+    count=1
+    for j in range(1,i+1):
+        count*=j
+    out+=[count]
+print(out)
+
+
+
+#
+
+a=[10,'Hello',3+5j,321]
+op=[1,6]
+out=[]
+for i in a:
+    if type(i)==int:
+        count=0
+        for j in str(i):
+                    count+=int(j)
+                    
+        out+=[count]
+print(out)
+                       
+''' 
+# WAP to print all the perfect number between 1 to 100 and store then inside a list
+
+out=[]
+for i in range(1,1001):
+    count=0
+    for j in range(1,i):
+        if i%j==0:
+            count+=j
+    if count==i:
+        out+=[count]
+print(out)
+            
+
+                       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
