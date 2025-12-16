@@ -745,80 +745,184 @@ for i in a:
         print(i)
     else:
         continue
-
         
+# print the palindrome number in the given list
 a=[123,121,232,3431,4313,4231,34133,134223]
 for i in a:
     if str(i)!=str(i)[::-1]:
         continue
     else:
         print(i)
-   
-# Nested for loop: for loop inside the for loop
 
-a='how are you all'
-output=[1,2,2,1]
-l1=[]
-for i in a.split(' '):
-    count=0
-    for j in i:
-        if j in 'AEIOUaeiou':
-            count+=1
-    l1.append(count)
+#=========================================================
+
+print(type('a'))
+print(type(10))
+
+l1=[i for i in range(1,11) if all((i%j!=0) for j in range(2,i))]    
 print(l1)
 
 
 
-# Print the factorial of a number from 1 to 10
-out=[]
-for i in range(1,11):
-    count=1
-    for j in range(1,i+1):
-        count*=j
-    out+=[count]
-print(out)
+x = "Hello\nWorld"
 
 
+print(str(x))
+print(repr(x))
+print(type(str(x)))
+print(type(repr(x)))
+
+
+
+import datetime
+now = datetime.datetime.now()
+print(str(now))   # Output: '2024-06-01 12:34:56.789012'
+print(repr(now))  # Output: 'datetime.datetime(2024, 6, 1, 12, 34, 56, 789012)' 
+
+
+#WAP 
+
+s='power star'
+out={'power':5,'star':4}
+d={}
+for i in s.split(' '):
+    count=0
+    for j in i:
+        count+=1
+    d[i]=count
+print(d)
 
 #
 
-a=[10,'Hello',3+5j,321]
-op=[1,6]
-out=[]
-for i in a:
-    if type(i)==int:
-        count=0
-        for j in str(i):
-                    count+=int(j)
-                    
-        out+=[count]
-print(out)
-                       
-''' 
-# WAP to print all the perfect number between 1 to 100 and store then inside a list
-
-out=[]
-for i in range(1,1001):
+s='power star'
+out={'power':2,'star':1}
+d={}
+for i in s.split(' '):
     count=0
-    for j in range(1,i):
-        if i%j==0:
-            count+=j
-    if count==i:
-        out+=[count]
-print(out)
-            
+    for j in i:
+        if j in 'AEIOUaeiou':
+            count+=1
+    d[i]=count
+print(d)
 
-                       
+#
 
 
+S='kabab is love'
+d={}
+for i in S.split(' '):
+    count=0
+    for j in i:
+        
+        if j in 'AEIOUaeiou':
+            count+=1
+    d[i]=[i[::-1],count,i[0:len(i):2]]
+    
+print(d)
+
+# 
+
+In=[100,200,35,40,60]
+ou=[]
+count=0
+for i in In:
+    count+=i
+for i in In:
+    ou+=[count-i]
+print(ou)
+
+
+# 
+
+s='bacbcaabbaa'
+d={}
+s1=''
+for i in s:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+for i in d:
+    s1=s1+i+str(d[i])
+print(s1)
 
 
 
 
 
 
+In=[100,200,50,400,300,150,125,175]
+N=300
+o1=[[100,200],[300],[150,150],[125,175]]
+out=[]
+op=[]
+for i in In:
+    pass
 
 
+# function in python
+
+# WAP to extract all the uppercase alphabet from a given string 
+def upper_case():
+
+
+
+# WAP to extratct all the upper case alphabet at even index and its ascii value should be divisible by 3 and count them 
+
+def upper_case():
+    a='PYTHON IS verY TThat '
+    out=''
+    count=0
+    for i in range(len(a)):
+        if "A"<=a[i]<="Z" and i%2==0 and ord(a[i])%3==0:
+            out+=a[i]
+            count+=1
+    print(out)
+    print(count)
+upper_case()
+
+# number is xylem and floam number
+def Xylem():
+    n=123261
+    n1=str(n)
+    first_last=int(n1[0])+int(n1[-1])
+    mid=0
+    
+    for i in range(1,len(n1)-1):
+        mid=mid+int(n1[i])
+    if mid==first_last:
+        print('Xylem')
+    else:
+        print('Floam')
+Xylem()
+
+#========================================
+#a='python'
+#op='Python'
+def Capital():
+    a='python'
+    out=''
+    for i in range(len(a)):
+        if i==0:
+            if 'a'<a[i]<='z':
+                out+=chr(ord(a[i])-32)
+        else:
+            out+=a[i]
+    print(out)
+
+Capital()
+
+
+# WAP to add number in your gmail
+a='ankit6391346034@gmail.com'
+sum=0
+for i in a:
+    if '0'<=i<='9':
+        sum+=int(i)
+print(sum)
+
+#================================================
+'''
 
 
 
