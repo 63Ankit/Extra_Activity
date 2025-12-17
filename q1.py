@@ -352,7 +352,7 @@ i=1
 n=int(input("Enter a number here: "))
 while i<=10:
     print(f"{n}*{i}={n*i}")
-    i+=1
+ ````````````````   i+=1
 
     
 #==================================================
@@ -361,7 +361,7 @@ sum=0
 while a>0:
     sum=sum+a%10
     a=a//10
-print(sum)   
+print(sum)  
 
 
 # 
@@ -922,7 +922,94 @@ for i in a:
 print(sum)
 
 #================================================
+
+# WAP to print sum of two numbers 
+
+def Sum(a,b):
+    print(a+b)
+    
+Sum(2,4)
+
+
+# Find the Vowel in the Given String 
+
+def vo(n):
+    for i in n:
+        if i in 'AEIOUaeiou':
+            print(i)
+vo("Ankit")
+
+
+
+# WAP 
+in='1001$0110!0110'
+out='0110#1001#1001'
+
+def change(n):
+    out=''
+    for i in n:
+        if i=='1':
+            out+='0'
+        elif i=='0':
+            out+='1'
+        else:
+            out+='#'
+    print(out)
+change('1001$0110!0110')
+
+#========================================================
+
+input=['Hello',10,3+5j,[1,2,3],'ab']
+output=[('Hello', 5), (10, 1), ((3+5j), 1), ([1, 2, 3], 3), ('ab', 2)]
+def find(n):
+    out=[]
+    for i in n:
+        if type(i) in (int,bool,complex,float):
+            out+=[(i,1)]
+        else:
+            out+=[(i,len(i))]
+    print(out)
+find(['Hello',10,3+5j,[1,2,3],'ab'])
+
+
+
+#=========================================================
+def Kuch_bhi():
+    return  1,2,3
+a,b,c=Kuch_bhi()
+print(Kuch_bhi())
+print(a,b,c)
+
+#=========================================================
+
+#
+def up():
+    a='Python'
+    out=''
+    for i in a:
+        if 'A'<=i<='Z':
+            out+=i
+    return out
+print(up())
+
+#=========================================================
+
 '''
+# a='Python is Programming language'
+def find():
+    d={}
+    a='Python is Programming language'
+    for i in a.split():
+        if i[0] in d:
+            d[i[0]] +=[i]
+        else:
+            d[i[0]] =[i]
+    return d
+print(find())
+
+
+
+
 
 
 
