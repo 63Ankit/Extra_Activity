@@ -190,7 +190,7 @@ else:
     if n2>n3:
         print(n2)
     else:
-        print(n3)+
+        print(n3)
 
 
 # WAP to create a email cridential
@@ -281,7 +281,7 @@ while a!=0:
     sum=sum*10+a%10
     
     a=a//10
-    i+=1
+    
 print(sum)
 
 
@@ -314,6 +314,7 @@ while i<len(A):
     i+=1
 
 #==================================================================
+
 a='ababccad'
 d={}
 i=0
@@ -322,6 +323,20 @@ while i<len(a):
 
     i+=1
 print(d)
+
+#==============================
+
+a='ababccad'
+out=''
+count=1
+for i in range(len(a)-1):
+    if a[i]==a[i+1]:
+        count+=1
+    else:
+        out=out+a[i]+str(count)
+        count=1
+out=out+a[-1]+str(count)
+print(out)
 
 
 #==============================================================
@@ -386,7 +401,7 @@ out=''
 while i<len(a) or i<len(b):
     if i<len(a):
         out+=a[i]
-        
+
     if i<len(b):
         out+=b[i]
     i+=1
@@ -994,7 +1009,7 @@ print(up())
 
 #=========================================================
 
-'''
+
 # a='Python is Programming language'
 def find():
     d={}
@@ -1008,9 +1023,172 @@ def find():
 print(find())
 
 
+#==========================================================
+# With argument with return type.
+
+# Convert all the lower string to upper and uppper to lower.
+
+def convert(n):
+    out=''
+    for i in n:
+        if 'A'<=i<='Z':
+            out+=chr(ord(i)+32)
+        else:
+            out+=chr(ord(i)-32)
+    return out
+print(convert('ANkit'))
+
+#======================================================
+# Find the greatest number
+
+def greatest(n):
+    great=0+
+    for i in n:
+        if i>great:
+            great=i
+    return great
+print(greatest([10,20,30,40,50,30,20,40]))
 
 
+# 
+def anagram(x,y):
+    sum=0
+    sum1=0
+    for i in x:
+        if i!=' ':
+            sum+=ord(i)
+    for i in y:
+        if i!=' ':
+            sum1+=ord(i)
+    if sum==sum1:
+        return True
+    else:
+        return False
+print(anagram('mother in law', 'hitler woman'))
 
 
+# A mini project  for making calculator.....
+def add():
+    n1=int(input('Enter the number here: '))
+    n2=int(input('Enter the 2nd number here: '))
+    return n1+n2
+def Mul():
+    n1=int(input('Enter the 1st number here: '))
+    n2=int(input('Enter the 2nd number here: '))
+    return n1*n2
+def Sub():
+    n1=int(input('Enter the 1st number here: '))
+    n2=int(input('Enter the 2nd number here: '))
+    return n1-n2
+def Div():
+    n1=int(input('Enter the 1st number here: '))
+    n2=int(input('Enter the 2nd number here: '))
+    return n1/n2
+while True:
+    print('Press 1 for addition')
+    print('Press 2 for Mul')
+    print('Press 3 for Sub')
+    print('Press 4 for Div')
+    print('Press 5 for Cancel')
+    x1=int(input('Enter Your Choice: '))
+    if x1==1:
+        print(add())
+    elif x1==2:
+        print(Mul())
+    elif x1==3:
+        print(Sub())
+    elif x1==4:
+        print(Div())
+    elif x1==5:
+        print('Thank You')
+        break
+    else: 
+        print('Input is Wrong here: ')
 
+#======================================================
+#WAP to print sum of minimum 4 number maximum 7 number...
+def number(n1,n2,n3,n4,n5=0,n6=0,n7=0):
+    print(n1+n2+n3+n4+n5+n6+n7+n7)
+number(10,20,30,40,50)
+
+#==============================================
+
+def number(n1,n2,n3,n4,n5=1,n6=1,n7=1):
+    return n1*n2*n3*n4*n5*n6*n7*n7
+print('minimun number mul',number(1,2,3,4))
+print('Maximum number mul',number(1,2,3,4,5,6,7))
+
+
+#====================================================
+# =============Strong Number without typecasting=========
+def strong_number(n):
+    n2=n
+    add=0
+    while n>0:
+        n1=n%10
+        sum=1
+        for i in range(1,n1+1):
+            sum*=i
+        n=n//10
+        add+=sum
+
+    if add==n2:
+        print('perfect Number')
+    else:
+        print('Not a perfect Number')
+
+        
+strong_number(145)
+
+#============================================================
+
+
+# Strong number by using the typecasting
+#==========================================================
+
+
+# ====================== Packing and Unpacking ==========================
+# WAP Find the Factorial of a number.
+def fact(n):
+    if n==1:
+        return 1
+    return n*fact(n-1)
+
+print(fact(5))
+
+
+#==============================================
+ 
+def fact(n):
+    if n==1 or n==0:
+        return 1
+    return n*fact(n-1)
+
+print(fact(5))
+import sys
+print(sys.getrecursionlimit())
+sys.setrecursionlimit(2000)
+def fact(n):
+    if n==1 or n==0:
+        return 1
+    return n*fact(n-1)
+print(sys.getrecursionlimit())
+print(fact(1000))
+
+'''
+#=================== Pattern Printing Questions ====================
+'''
+1 1 1 1 1 
+2 2 2 2 2 
+3 3 3 3 3 
+4 4 4 4 4 
+5 5 5 5 5
+
+'''
+def Pattern(n):
+    for i in range(1,n+1):
+        for j in range(1,n+1):
+            print(i,end=' ')
+        print()
+Pattern(5)
 
