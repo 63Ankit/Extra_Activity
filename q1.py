@@ -1483,6 +1483,126 @@ def Pattern(n):
         print()
 Pattern(7)
 
-'''
+
 
 #============================================================
+# Next Start From the Question No 127. 
+
+#      * 
+#      * * 
+#      * * *
+#      * * * *
+#      * * * * *
+#      * * * *
+#      * * *
+#      * *
+#      *
+
+def Pattern(n):
+    star=1
+    mid=(n//2)+1
+    for i in range(1,n+1):
+        for j in range(1,star+1):
+            print('*',end=' ')
+        if i<mid:
+            star+=1
+        else:
+            star-=1
+        print()
+
+Pattern(9)    
+        
+
+
+#=====================================================
+
+#         *
+#       * *
+#     * * *
+#   * * * *
+# * * * * *
+#   * * * *
+#     * * *
+#       * *
+#         *
+
+def Pattern(n):
+    star=1
+    mid=(n//2)+1
+    space=mid-1
+    for i in range(1,n+1):
+        for j in range(1,space+1):
+            print(' ',end=' ')
+        for j in range(1,star+1):
+            print('*',end=' ')
+        if i<mid:
+            star+=1
+            space-=1
+        else:
+            star-=1
+            space+=1
+        print()
+    
+Pattern(9)
+
+
+
+#=========================================================
+
+#       *   
+#     *   *   
+#   *   *   *   
+# *   *   *   *   
+#   *   *   *   
+#     *   *   
+#       *
+
+def Pattern(n):
+    star=1
+    mid=(n//2)+1
+    space=mid-1
+    for i in range(1,n+1):
+        for j in range(1,space+1):
+            print(' ',end=' ')
+        for j in range(1,star+1):
+            print('*',end='   ')
+        if i<mid:
+            star+=1
+            space-=1
+        else:
+            star-=1
+            space+=1
+        print()
+Pattern(7)
+
+#========================================
+#     Question start from 146 here 
+
+#       * 
+#     * * * 
+#   * * * * * 
+# * * * * * * * 
+#   * * * * * 
+#     * * * 
+#       * 
+
+def Pattern(n):
+    star=1
+    mid=(n//2)+1
+    space=mid-1
+    for i in range(1,n+1):
+        for j in range(1,space+1):
+            print(' ',end=' ')
+        for j in range(1,star+1):
+            print('*',end=' ')
+        if i<mid:
+            star+=2
+            space-=1
+        else:
+            star-=2
+            space+=1
+        print()
+Pattern(7)
+        
+'''
+#=========================================
