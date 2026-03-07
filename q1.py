@@ -1576,7 +1576,7 @@ def Pattern(n):
 Pattern(7)
 
 #========================================
-#     Question start from 146 here 
+#     Question Start From 146 Here 
 
 #       * 
 #     * * * 
@@ -1604,5 +1604,59 @@ def Pattern(n):
         print()
 Pattern(7)
         
+
+#=======================================================
+
+#       1 
+#     2 2 2 
+#   3 3 3 3 3 
+# 4 4 4 4 4 4 4 
+#   5 5 5 5 5
+#     6 6 6
+#       7
+
+def Pattern(n):
+    star=1
+    mid=(n//2)+1
+    space=mid-1
+    for i in range(1,n+1):
+        for j in range(1,space+1):
+            print(' ',end=' ')
+        for j in range(1,star+1):
+            print(i,end=' ')
+        if i<mid:
+            star+=2
+            space-=1
+        else:
+            star-=2
+            space+=1
+        print()
+Pattern(7)
+#=============================================================
+
+def Pattern(n):
+    n1=1
+    star=1
+    mid=(n//2)+1
+    space=mid-1
+    for i in range(1,n+1):
+        for j in range(1,space+1):
+            print(' ',end=' ')
+        for j in range(1,star+1):
+            print(n1,end='  ')
+            n1+=1
+        if i<mid:
+            star+=2
+            space-=1
+        else:
+            star-=2
+            space+=1
+        print()
+Pattern(7)
+
 '''
-#=========================================
+
+#=====================================================
+
+#     Next Question Start From 181...................
+
