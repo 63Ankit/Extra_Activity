@@ -1654,9 +1654,64 @@ def Pattern(n):
         print()
 Pattern(7)
 
+
+#=======================================================
+
+#    * * * * * * * 
+#      * * * * * 
+#        * * * 
+#          * 
+#        * * * 
+#      * * * * * 
+#    * * * * * * * 
+
+def Pattern(n):
+    star=n
+    mid=(n//2)+1
+    space=0
+    for i in range(1,n+1):
+        for j in range(1,space+1):
+            print(' ',end=' ')
+        for j in range(1,star+1):
+            print('*',end=' ')
+        if i<mid:
+            star-=2
+            space+=1
+        else:
+            star+=2
+            space-=1
+        print()
+Pattern(7)
+
 '''
+
+#=======================================================
+def pattern(n):
+    start_star=1
+    end_star=n
+    mid=(n//2)+1
+    for i in range(1,n+1):
+        for j in range(1,n+1):
+            if j<=start_star or j>=end_star:
+                print('* ',end='')
+            else:
+                print('  ',end='')
+        if i<mid:
+            start_star+=1
+            end_star-=1
+        else:
+            start_star-=1
+            end_star+=1
+        print()
+pattern(int(input('Enter the number of Rows: ')))
+                 
 
 #=====================================================
 
 #     Next Question Start From 181...................
+
+# Some kind of special operator we have in not in between not between is is not like not like 
+# (in not in , between not between ,like not like, is is not) thats all are the special operator...
+# Number of the MultiRow function here. Min(), Max(), Avg(), Count(), Sum()
+
 
